@@ -8,7 +8,7 @@ export const Container = styled.div`
 export const Menu = styled.div`
     background: rgb(28,211,211);
     background: linear-gradient(180deg, rgba(28,211,211,1) 54%, rgba(0,0,0,0.8603641285615808) 100%);
-    width: 210px; 
+    width: 200px; 
     height: 100%;
 	overflow: hidden;
 	position: fixed;
@@ -58,7 +58,7 @@ export const Logo = styled.div`
 
     background: #fff;
     padding: 15px;
-    width: 150px;
+    width: 130px;
     height: auto;
     border-radius: 10px;
     margin: 20px 0 10px 0;
@@ -68,7 +68,7 @@ export const Logo = styled.div`
         width: 50px;
         margin: 0 5px;
     }
-    h1{
+    h2{
         color: #143047;
     }
 `

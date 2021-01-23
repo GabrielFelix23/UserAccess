@@ -10,7 +10,7 @@ function Menu() {
             <S.Header>
                 <S.Logo>
                     <img src={Logo} alt="Logo"/>
-                    <h1>Logo</h1>
+                    <h2>Logo</h2>
                 </S.Logo>
                 <span>Empresa A - Sala 210</span>
                 <span>João Alves</span>
