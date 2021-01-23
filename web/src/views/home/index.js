@@ -1,9 +1,11 @@
 import React from 'react'
 
+import Menu from '../../components/menu'
+
 function Home() {
   return (
     <div>
-      <h1>Tela Home</h1>
+      <Menu/>
     </div>
   )
 }
