@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     width: 100%;
-    max-width: 620px;
-    margin-top: 30px;
+    max-width: 650px;
+    
 `
 
 export const Body = styled.div`

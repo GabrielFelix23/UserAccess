@@ -5,9 +5,11 @@ import { BsStopwatch } from 'react-icons/bs';
 
 import api from '../../services/api'
 import HeaderAccessApproval from '../../components/header/accessApproval'
+import Modal from '../../components/Modal'
 
 function AccessApproval() {
     const [list, setList] = useState([])
+    const [isModalVisibol, setIsModalVisibol] = useState(false)
 
     async function loadList(){
         await api.get('')
@@ -44,15 +46,20 @@ function AccessApproval() {
                                     <BsStopwatch/>
                                     <span>{l.dh_access}</span>
                                 </div>
-                                <button>Aprovar</button>
+                                <button onClick={() => setIsModalVisibol(true)}>Aprovar</button>   
                             </main>
                             <div className="separator"/>
                         </section>
                     )  
                 }) 
+            }   
+        </S.Body> 
+            {
+                isModalVisibol ? 
+                <Modal onClose={() => setIsModalVisibol(false)}>
+                    <h1>teste</h1>
+                </Modal> : null
             }
-                
-            </S.Body> 
         </S.Container>
     )
 }

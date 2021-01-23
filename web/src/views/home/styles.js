@@ -11,5 +11,6 @@ export const Menu = styled.div`
 
 export const AccessApproval = styled.div`
     width: 100%;    
-    margin-left: 250px;
+    margin-left: 220px;
+    margin-top: 5%;
 `
