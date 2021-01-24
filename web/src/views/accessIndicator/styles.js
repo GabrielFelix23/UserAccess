@@ -18,13 +18,6 @@ export const Body = styled.div`
     section{
         display: flex;
         flex-direction: column;
-
-        .separator{
-            margin: 0 auto;
-            border: 1px solid #E1E1E1;
-            width: 100%;
-            max-width: 490px;
-        }
     }
 
     main{

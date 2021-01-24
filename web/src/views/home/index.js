@@ -3,18 +3,17 @@ import * as S from './styles'
 
 import Menu from '../../components/menu'
 import AccessApproval from '../accessApproval'
+import AccessIndicator from '../accessIndicator'
 
 function Home() {
   return (
     <S.Container>
-      <S.Menu>
-        <Menu/>
-      </S.Menu>
+      <Menu/>
 
-      <S.AccessApproval>
+      <S.ContainerAccessApproval>
         <AccessApproval/>
-        
-      </S.AccessApproval>
+        <AccessIndicator/>
+      </S.ContainerAccessApproval>
     </S.Container>
   )
 }

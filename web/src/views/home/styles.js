@@ -6,10 +6,7 @@ export const Container = styled.div`
     flex-direction: row;
 ` 
 
-export const Menu = styled.div`
-`
-
-export const AccessApproval = styled.div`
+export const ContainerAccessApproval = styled.div`
     display: flex;
     align-items: center;
     flex-direction: row;
