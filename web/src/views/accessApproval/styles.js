@@ -15,6 +15,11 @@ export const Body = styled.div`
     overflow: auto;
     overflow-x: hidden;
 
+    span{
+        font-size:12px;
+    }
+
+
     section{
         display: flex;
         flex-direction: column;
@@ -28,31 +33,17 @@ export const Body = styled.div`
     }
 
     main{
-        display: flex;
+        display: grid;
+        grid-template-columns: 10fr 5fr 8fr 0fr;
+        grid-gap: 5px;
         align-items: center;
-        justify-content: space-between;
-        flex-direction: row;
-        font-size: 12px;
-        margin: 5px 7px;
-        color: #424242;
-
-        .grid {
-            display: grid;
+        margin: 5px 5px;
+        
+        .avatar{
+            display: flex;
             align-items: center;
+            flex-direction: row;
         }
-
-        .grid-template-columns-1 {
-            grid-template-columns: 40px 170px 0 0;
-        }
-
-        .grid-template-columns-2 {
-            grid-template-columns: 1fr 2fr;
-        }
-
-        .grid-template-columns-3 {
-            grid-template-columns: minmax(200px, 1fr) 1fr 1fr;
-        }
-
         .user{
             display: flex;
             align-items: center;
