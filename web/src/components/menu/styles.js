@@ -58,17 +58,17 @@ export const Logo = styled.div`
 
     background: #fff;
     padding: 15px;
-    width: 130px;
-    height: auto;
+    width: 150px;
+    height: 80px;
     border-radius: 10px;
     margin: 20px 0 10px 0;
     padding: 10px;
 
     img{
-        width: 50px;
+        width: 58px;
         margin: 0 5px;
     }
-    h2{
+    h1{
         color: #143047;
     }
 `

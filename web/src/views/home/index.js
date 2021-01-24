@@ -13,6 +13,7 @@ function Home() {
 
       <S.AccessApproval>
         <AccessApproval/>
+        
       </S.AccessApproval>
     </S.Container>
   )

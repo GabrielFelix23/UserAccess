@@ -20,7 +20,7 @@ function AccessApproval() {
 
     useEffect(() => {
         loadList()
-      }, [])
+    }, [])
 
     return (
         <S.Container>
@@ -46,7 +46,11 @@ function AccessApproval() {
                                     <BsStopwatch/>
                                     <span>{l.dh_access}</span>
                                 </div>
-                                <button onClick={() => setIsModalVisibol(true)}>Aprovar</button>   
+                                {l.type_user == "VISITANTE" ?
+                                    <button onClick={() => setIsModalVisibol(true)}>APROVAR</button>
+                                    :
+                                    <button onClick={() => setIsModalVisibol(true)}>DECIDIR</button>
+                                }
                             </main>
                             <div className="separator"/>
                         </section>
@@ -57,7 +61,7 @@ function AccessApproval() {
             {
                 isModalVisibol ? 
                 <Modal onClose={() => setIsModalVisibol(false)}>
-                    <h1>teste</h1>
+                 
                 </Modal> : null
             }
         </S.Container>

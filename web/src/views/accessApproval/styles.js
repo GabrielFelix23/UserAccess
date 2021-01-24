@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     width: 100%;
-    max-width: 650px;
-    
+    max-width: 550px;
+    margin: 0 9px 10px 0;
 `
 
 export const Body = styled.div`
@@ -23,7 +23,7 @@ export const Body = styled.div`
             margin: 0 auto;
             border: 1px solid #E1E1E1;
             width: 100%;
-            max-width: 580px;
+            max-width: 490px;
         }
     }
 
@@ -32,8 +32,8 @@ export const Body = styled.div`
         align-items: center;
         justify-content: space-between;
         flex-direction: row;
-        font-size: 12px;
-        margin: 10px 20px;
+        font-size: 10px;
+        margin: 5px 7px;
         color: #424242;
 
         .grid{
@@ -59,8 +59,8 @@ export const Body = styled.div`
         }
 
         img{
-            width: 40px;
-            height: 40px;
+            width: 35px;
+            height: 35px;
             border-radius: 50px;
         }
 
@@ -76,8 +76,8 @@ export const Body = styled.div`
             
 
             svg{
-                margin-right: 3px;
-                font-size: 18px;
+                margin-right: 2px;
+                font-size: 15px;
                 color: #424242
             }
         }
@@ -88,8 +88,8 @@ export const Body = styled.div`
             flex-direction: row;
 
             svg{
-                margin-right: 3px;
-                font-size: 18px;
+                margin-right: 2px;
+                font-size: 15px;
                 color: #424242
             }
         }
@@ -97,13 +97,12 @@ export const Body = styled.div`
         button{
             background: #0BB7B7;
             border: none;
-            border-radius: 10px;
+            border-radius: 5px;
             color: #fff;
-            font-size: 14px;
+            font-size: 10px;
             font-weight: bold;
-            width: auto;
-            height: auto;
-            padding: 8px;
+            width: 70px;
+            height: 25px;
             cursor: pointer;
 
             &:hover{
