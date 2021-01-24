@@ -3,7 +3,7 @@ import * as S from './styles'
 
 import Menu from '../../components/menu'
 import AccessApproval from '../accessApproval'
-import AccessIndicator from '../accessIndicator'
+import LastAccess from '../LastAccess'
 
 function Home() {
   return (
@@ -12,7 +12,7 @@ function Home() {
 
       <S.ContainerAccessApproval>
         <AccessApproval/>
-        <AccessIndicator/>
+        <LastAccess/>
       </S.ContainerAccessApproval>
     </S.Container>
   )

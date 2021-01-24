@@ -8,7 +8,7 @@ export const Container = styled.div`
 export const Menu = styled.div`
     background: rgb(28,211,211);
     background: linear-gradient(180deg, rgba(28,211,211,1) 54%, rgba(0,0,0,0.8603641285615808) 100%);
-    width: 200px; 
+    width: 170px; 
     height: 100%;
 	overflow: hidden;
 	position: fixed;
@@ -24,7 +24,7 @@ export const Header = styled.div`
     flex-direction: column;
 
     span{
-        font-size: 14px;
+        font-size: 13px;
         color: #fff;
         margin-top: 10px;
     }
@@ -41,13 +41,13 @@ export const Nav = styled.div`
     
         color: #fff;
         margin-top: 20px;
-        font-size: 15px;
+        font-size: 14px;
         padding: 10px;
     }
     .activated{
             background: #143047;
             width: 100%;
-            height: 30px;
+            height: 27px;
         }
 `
 
@@ -58,17 +58,17 @@ export const Logo = styled.div`
 
     background: #fff;
     padding: 15px;
-    width: 150px;
+    width: 130px;
     height: 80px;
     border-radius: 10px;
     margin: 20px 0 10px 0;
     padding: 10px;
 
     img{
-        width: 58px;
+        width: 50px;
         margin: 0 5px;
     }
-    h1{
+    h2{
         color: #143047;
     }
 `

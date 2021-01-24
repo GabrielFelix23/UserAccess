@@ -7,7 +7,7 @@ import { RiArrowUpDownLine } from 'react-icons/ri'
 import { TiArrowShuffle } from 'react-icons/ti'
 import { RiCheckboxBlankFill } from 'react-icons/ri'
 
-import api from '../../services/api'
+import api from '../../services/api_accessApproval'
 
 function Modal({onClose = () => {}}){
     const [list, setList] = useState([])

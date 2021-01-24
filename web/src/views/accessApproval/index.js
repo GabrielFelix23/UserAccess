@@ -3,7 +3,7 @@ import * as S from './styles'
 import { ImLocation} from 'react-icons/im';
 import { BsStopwatch } from 'react-icons/bs';
 
-import api from '../../services/api'
+import api from '../../services/api_accessApproval'
 import HeaderAccessApproval from '../../components/header/accessApproval'
 import Modal from '../../components/Modal'
 
@@ -38,7 +38,7 @@ function AccessApproval() {
                                         <span>{l.type_user}</span>
                                     </div>
                                 </div>
-                                <div className="room">
+                                <div className="grid .grid-template-columns-3 date room">
                                     <ImLocation/>
                                     <span>Sala {l.room}</span>
                                 </div>

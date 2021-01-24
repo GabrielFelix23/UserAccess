@@ -2,14 +2,14 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     width: 100%;
-    max-width: 550px;
+    max-width: 580px;
     margin: 0 9px 10px 0;
 `
 
 export const Body = styled.div`
     width: 100%;
     background: #EEEEEE;
-    height: 330px;
+    height: 300px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px; 
     overflow: auto;
@@ -32,20 +32,25 @@ export const Body = styled.div`
         align-items: center;
         justify-content: space-between;
         flex-direction: row;
-        font-size: 11px;
+        font-size: 12px;
         margin: 5px 7px;
         color: #424242;
 
-        .grid{
+        .grid {
             display: grid;
             align-items: center;
         }
+
         .grid-template-columns-1 {
-            grid-template-columns: 100px 100px 100px;
-            grid-template-columns: 0fr 5fr;
+            grid-template-columns: 40px 170px 0 0;
         }
+
+        .grid-template-columns-2 {
+            grid-template-columns: 1fr 2fr;
+        }
+
         .grid-template-columns-3 {
-	        grid-template-columns: minmax(200px, 1fr) 1fr 1fr;
+            grid-template-columns: minmax(200px, 1fr) 1fr 1fr;
         }
 
         .user{
@@ -59,8 +64,8 @@ export const Body = styled.div`
         }
 
         img{
-            width: 40px;
-            height: 40px;
+            width: 43px;
+            height: 43px;
             border-radius: 50px;
         }
 

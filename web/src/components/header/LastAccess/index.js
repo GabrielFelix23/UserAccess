@@ -1,7 +1,7 @@
 import React from 'react'
 import * as S from './styles'
 
-function HeaderAccessApproval() {
+function HeaderLastAccess() {
   return (
     <S.Container>
       <span>Últimos acessos</span>
@@ -13,4 +13,4 @@ function HeaderAccessApproval() {
   )
 }
 
-export default HeaderAccessApproval
+export default HeaderLastAccess

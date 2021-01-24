@@ -2,18 +2,27 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
     width: 100%;
-    max-width: 550px;
+    max-width: 580px;
     margin: 0 9px 10px 0;
 `
 
 export const Body = styled.div`
     width: 100%;
     background: #EEEEEE;
-    height: 330px;
+    height: 300px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px; 
     overflow: auto;
     overflow-x: hidden;
+
+    span{
+        font-size:12px;
+    }
+
+    svg{
+        margin-right: 2px;
+        font-size: 15px;
+    }
 
     section{
         display: flex;
@@ -21,81 +30,63 @@ export const Body = styled.div`
     }
 
     main{
-        display: flex;
+        display: grid;
+        grid-template-columns: 8fr 2fr 5fr 6fr 0fr;
+        grid-gap: 5px;
         align-items: center;
-        justify-content: space-between;
-        flex-direction: row;
-        font-size: 11px;
-        margin: 5px 7px;
-        color: #424242;
+        margin: 5px 5px;
 
-        .grid{
-            display: grid;
+        .avatar{
+            display: flex;
             align-items: center;
+            flex-direction: row;
         }
-        .grid-template-columns-1 {
-            grid-template-columns: 100px 100px 100px;
-            grid-template-columns: 0fr 5fr;
-        }
-        .grid-template-columns-3 {
-	        grid-template-columns: minmax(200px, 1fr) 1fr 1fr;
-        }
-
         .user{
             display: flex;
             align-items: center;
             flex-direction: row;
         }
-
         .textBold{
             font-weight: bold;
         }
-
         img{
-            width: 40px;
-            height: 40px;
+            width: 43px;
+            height: 43px;
             border-radius: 50px;
         }
-
         .name{
             display: flex;
             flex-direction: column;
             margin-left: 10px;
         }
-        .room {
+        .user {
+            display: flex;
+            align-items: center;
+            flex-direction: row;  
+        }
+        .status{
             display: flex;
             align-items: center;
             flex-direction: row;
-            
-
-            svg{
-                margin-right: 2px;
-                font-size: 15px;
-                color: #424242
-            }
-        }
+        }  
 
         .date{
             display: flex;
             align-items: center;
             flex-direction: row;
-
-            svg{
-                margin-right: 2px;
-                font-size: 15px;
-                color: #424242
-            }
         }
 
         button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
             background: #0BB7B7;
             border: none;
             border-radius: 5px;
-            color: #fff;
-            font-size: 10px;
             font-weight: bold;
-            width: 70px;
-            height: 25px;
+            width: 33px;
+            height: 30px;
             cursor: pointer;
 
             &:hover{
