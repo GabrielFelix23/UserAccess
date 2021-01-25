@@ -13,5 +13,5 @@ export const ContainerAccessApproval = styled.div`
     flex-wrap: wrap;
 
     width: 100%;    
-    margin: 5% 0 0 14%;
+    margin: 5% 0 10px 14%;
 `
