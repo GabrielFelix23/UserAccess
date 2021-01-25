@@ -3,7 +3,8 @@ import * as S from './styles'
 
 import Menu from '../../components/menu'
 import AccessApproval from '../accessApproval'
-import LastAccess from '../LastAccess'
+import LastAccess from '../scheduled'
+import Scheduled from '../scheduled'
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <S.ContainerAccessApproval>
         <AccessApproval/>
         <LastAccess/>
+        <Scheduled/>
       </S.ContainerAccessApproval>
     </S.Container>
   )
