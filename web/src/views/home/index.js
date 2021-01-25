@@ -3,7 +3,7 @@ import * as S from './styles'
 
 import Menu from '../../components/menu'
 import AccessApproval from '../accessApproval'
-import LastAccess from '../scheduled'
+import LastAccess from '../lastAccess'
 import Scheduled from '../scheduled'
 
 function Home() {

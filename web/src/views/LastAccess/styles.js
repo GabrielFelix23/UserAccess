@@ -59,11 +59,6 @@ export const Body = styled.div`
             flex-direction: column;
             margin-left: 10px;
         }
-        .user {
-            display: flex;
-            align-items: center;
-            flex-direction: row;  
-        }
         .status{
             display: flex;
             align-items: center;

@@ -6,7 +6,7 @@ import { FiUsers } from 'react-icons/fi'
 import { BsFillEyeFill } from 'react-icons/bs'
 
 import api from '../../services/api_LastAccess'
-import HeaderLastAccess from '../../components/header/LastAccess'
+import HeaderLastAccess from '../../components/header/lastAccess'
 
 function LastAccess() {
     const [list, setList] = useState([])

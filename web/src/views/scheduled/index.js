@@ -1,11 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import * as S from './styles'
-import { BsStopwatch } from 'react-icons/bs'
-import { RiArrowUpDownLine } from 'react-icons/ri'
-import { FiUsers } from 'react-icons/fi'
-import { BsFillEyeFill } from 'react-icons/bs'
 
-import api from '../../services/api_LastAccess'
+import api from '../../services/api_scheduled'
 import HeaderScheduled from '../../components/header/scheduled'
 
 function Scheduled() {
@@ -14,7 +10,7 @@ function Scheduled() {
     async function loadList(){
         await api.get('')
         .then((response) => {
-            setList(response.data.data.last_access)
+            setList(response.data.data.scheduled)
         })
     }
 
@@ -35,27 +31,25 @@ function Scheduled() {
                                     <img src={l.avatar} alt="Avatar"/>
                                     <div className="name">
                                         <span className="textBold">{l.name}</span>
-                                        <span>{l.approved_by}</span>
+                                        <span>{l.type_user}</span>
                                     </div>
-                                </div>
-                                
-                                <div className="user">
-                                    <FiUsers color="#424242"/>
-                                    <span>3</span>
-                                </div>
-
-                                <div className="status">
-                                    <RiArrowUpDownLine color="#0bb7b7"/>
-                                    <span>{l.status}</span>
-                                </div>
-                               
+                                </div>    
                                 <div className="date">
-                                    <BsStopwatch color="#424242"/>
+                                    <span>Data hora:</span>
                                     <span>{l.dh_access}</span>
                                 </div>
-                                
-                                <button><BsFillEyeFill color="#fff"/></button>
-                                
+
+                                <div className="avatar">
+                                    <img src={l.avatar} alt="Avatar"/>
+                                    <div className="name">
+                                        <span className="textBold">{l.name}</span>
+                                        <span>{l.type_user}</span>
+                                    </div>
+                                </div>    
+                                <div className="date">
+                                    <span>Data hora:</span>
+                                    <span>{l.dh_access}</span>
+                                </div>   
                             </main>
                         </section>
                     )  

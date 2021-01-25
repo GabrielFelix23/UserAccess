@@ -19,11 +19,6 @@ export const Body = styled.div`
         font-size:12px;
     }
 
-    svg{
-        margin-right: 2px;
-        font-size: 15px;
-    }
-
     section{
         display: flex;
         flex-direction: column;
@@ -31,17 +26,12 @@ export const Body = styled.div`
 
     main{
         display: grid;
-        grid-template-columns: 8fr 2fr 5fr 6fr 0fr;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
         grid-gap: 5px;
         align-items: center;
         margin: 5px 5px;
 
         .avatar{
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-        }
-        .user{
             display: flex;
             align-items: center;
             flex-direction: row;
@@ -59,39 +49,10 @@ export const Body = styled.div`
             flex-direction: column;
             margin-left: 10px;
         }
-        .user {
-            display: flex;
-            align-items: center;
-            flex-direction: row;  
-        }
-        .status{
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-        }  
-
         .date{
             display: flex;
             align-items: center;
-            flex-direction: row;
-        }
-
-        button{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            background: #0BB7B7;
-            border: none;
-            border-radius: 5px;
-            font-weight: bold;
-            width: 33px;
-            height: 30px;
-            cursor: pointer;
-
-            &:hover{
-                opacity: 0.7
-            }
+            flex-direction: column;
         }
     }
 `
